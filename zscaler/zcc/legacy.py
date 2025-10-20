@@ -63,8 +63,8 @@ class LegacyZCCClientHelper:
         self._api_key = api_key or os.getenv("api_key", os.getenv(f"{self._env_base}_CLIENT_ID"))
         self._secret_key = secret_key or os.getenv("secret_key", os.getenv(f"{self._env_base}_CLIENT_SECRET"))
         self._env_cloud = cloud or os.getenv(f"{self._env_base}_CLOUD", "zscaler")
-        self.login_url = f"https://api-mobile.{self._env_cloud}.net/papi/auth/v1/login"
-        self.url = f"https://api-mobile.{self._env_cloud}.net"
+        self.login_url = f"https://mobile6.{self._env_cloud}.net/papi/auth/v1/login"
+        self.url = f"https://mobile6.{self._env_cloud}.net"
 
         self.timeout = timeout
 
